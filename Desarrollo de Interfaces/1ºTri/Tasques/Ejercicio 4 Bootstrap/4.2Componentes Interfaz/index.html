@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hola Ares Caballero</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h2>1.Texto</h2>
+    <div class="container border border-black">
+      <h4>Esto es un título</h4>
+      <p>
+        Esto es un párrafo que contiene un
+        <span class="text-info">texto en línea</span> con el color cambiado
+      </p>
+    </div>
+    <h2>2.Imágenes</h2>
+    <div class="container border border-black">
+      <img
+        src="C:\Users\Ares\Desktop\2ºDAM\Desarrollo de Interfaces\1ºTri\Tasques\Ejercicio 4 Bootstrap\4.2Componentes Interfaz\img\fondo disco elisyum.png"
+        alt="imagen de ejemplo"
+        width="150px"
+        height="150px"
+      />
+    </div>
+    <h2>3.Listas</h2>
+    <div class="container border border-black">
+      <h4>Listas desordenadas</h4>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+      <h4>Listas ordenadas</h4>
+      <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ol>
+    </div>
+    <h2>4.Tablas</h2>
+    <div class="container border border-black">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Nombre 1</td>
+            <td>Apellido 1</td>
+            <td>Edad 1</td>
+          </tr>
+          <tr>
+            <td>Nombre 2</td>
+            <td>Apellido 2</td>
+            <td>Edad 2</td>
+          </tr>
+          <tr>
+            <td>Nombre 3</td>
+            <td>Apellido 3</td>
+            <td>Edad 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <h2>5. Etiquetas</h2>
+    <div class="container border border-black">
+      <p>
+        Ejemplo de texto con una
+        <span class="badge bg-secondary">etiqueta</span>
+      </p>
+      <button type="button" class="btn btn-primary">
+        Mensajes
+        <span class="badge text-bg-secondary"> 4 </span>
+      </button>
+      <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+    </div>
+    <h2>6.Botones</h2>
+    <div class="container border border-black">
+      <div class="btn-group d-block mb-2" role="group">
+        <button class="btn btn-primary">primario</button>
+        <button class="btn btn-secondary">secundario</button>
+        <button class="btn btn-success">éxito</button>
+      </div>
+      <div class="btn-group d-block mb-2" role="group">
+        <button class="btn btn-danger">peligro</button>
+        <button class="btn btn-warning">advertencia</button>
+        <button class="btn btn-info">información</button>
+      </div>
+      <div class="btn-group d-block mb-2" role="group">
+        <button class="btn btn-light">claro</button>
+        <button class="btn btn-dark">orcuro</button>
+        <button class="btn btn-link">enlace</button>
+      </div>
+      <button id="button" class="btn btn-success">
+        Botón que hace algo (Acordarse de abrir las Dev Tools con
+        Ctrl+Shift+I)(Y de poner los Scripts de los botones a parte del Script
+        que inicia Bootstrap)
+      </button>
+    </div>
+    <h2>7.Entrada de texto</h2>
+    <div class="container border border-black">
+      <label for="user" class="col-form-label">Usuario:</label>
+      <input type="text" class="form-control" id="user" value="user" />
+      <label for="password" class="col-form-label">Contraseña:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password"
+        value="password"
+      />
+      <label for="email" class="col-form-label">Email:</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        value="email@user.com"
+      />
+    </div>
+    <h2>7.1 Áreas de texto</h2>
+    <div class="container border border-black">
+      <label for="demo">Área de texto:</label>
+      <textarea class="form-control" id="demo" rows="3">
+        Texto de ejemplo. 
+        Las áreas de texto permiten introducir textos más largos y 
+        presentarlos en varias líneas
+      </textarea>
+    </div>
+    <h2>8. Checkbox</h2>
+    <div class="container border border-black">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="opcion1"
+          name="opcion1"
+          value="op1"
+        />
+        <label class="form-check-label" for="opcion1"> Primera opción </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="opcion2"
+          name="opcion2"
+          value="op2"
+          checked
+        />
+        <label class="form-check-label" for="opcion2"> Segunda opción </label>
+      </div>
+    </div>
+    <h2>8.1 Switches</h2>
+    <div class="container border border-black">
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="opcion1s"
+          name="opcion1s"
+          value="op1s"
+        />
+        <label class="form-check-label" for="opcion1s"> Primera opción </label>
+      </div>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="opcion2s"
+          name="opcion2s"
+          value="op2s"
+          checked
+        />
+        <label class="form-check-label" for="opcion2s"> Segunda opción </label>
+      </div>
+    </div>
+    <h2>9. Radio</h2>
+    <div class="container border border-black">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="mascota-perro"
+          name="mascota"
+          value="perro"
+          checked
+        />
+        <label class="form-check-label" for="mascota-perro"> Perro </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="mascota-gato"
+          name="mascota"
+          value="gato"
+        />
+        <label class="form-check-label" for="mascota-gato"> Gato </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          id="mascota-otros"
+          name="mascota"
+          value="otros"
+        />
+        <label class="form-check-label" for="mascota-otros"> Otros </label>
+      </div>
+    </div>
+    <h2>10. Select</h2>
+    <div class="container border border-black">
+      <select class="form-select" name="opcion">
+        <option value="0" selected>Selecciona una opción</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+    </div>
+    <h2>10.1 Select Múltiple</h2>
+    <div class="container border border-black">
+      <select class="form-select" name="opcion-multiple" multiple>
+        <option value="0" selected>Selecciona una opción</option>
+        <option value="1">Uno</option>
+        <option value="2">Dos</option>
+        <option value="3">Tres</option>
+      </select>
+    </div>
+    <h2>11 Slider</h2>
+    <div class="container border border-black">
+      <input
+        class="form-range"
+        type="range"
+        min="0"
+        max="100"
+        step="1"
+        name="slider"
+      />
+    </div>
+    <h2>12. Formularios</h2>
+    <div class="container border border-black">
+      <form>
+        <div class="mb-3">
+          <label for="usuario" class="col-form-label">Usuario:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="usuario"
+            value="usuario"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="pass" class="col-form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            value="pass"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="mail" class="col-form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="mail"
+            value="mail@mail.com"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="area" class="col-form-label">Área de texto:</label>
+          <textarea class="form-control" id="area" rows="3">
+            Texto de ejemplo. 
+            Las áreas de texto permiten introducir textos mas largos y 
+            presentarlos  en varias líneas
+          </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit">
+          Enviar
+        </button>
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //1ºPara ver como clicka el botón en tiempo real
+      const button = document.getElementById("button");
+      button.addEventListener("click", () => {
+        console.log("click");
+      });
+
+      //2ºPara ver como lee el input de user en tiempo real
+      const user = document.getElementById("user");
+      user.addEventListener("input", () => {
+        console.log(user.value);
+      });
+
+      //3ºPara ver como se selecciona y deselecciona primera opción en tiempo real
+      const opc = document.getElementById("opcion1");
+      opc.addEventListener("click", () => {
+        console.log("Opción 1 está marcada? " + opc.checked);
+      });
+
+      //4ºPara ver que opción de mascota seleccionamos en tiempo real
+      const mascotas = document.querySelectorAll('input[name="mascota"]');
+      mascotas.forEach((radio) => {
+        radio.addEventListener("change", () => {
+          console.log(radio.value);
+        });
+      });
+
+      //5ºPara ver que opción tenemos en el select
+      const seleccionada = document.querySelectorAll('select[name="opcion"]');
+      seleccionada.forEach((select) => {
+        select.addEventListener("change", () => {
+          console.log(select.value);
+        });
+      });
+
+      //6ºPara ver el valor del slider
+      const slider = document.querySelectorAll('input[name="slider"]');
+      slider.forEach((slide) => {
+        slide.addEventListener("change", () => {
+          console.log(slide.value);
+        });
+      });
+
+      //7ºPara comprobar la validez del Formulario (12.1)
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (event) => {
+        event.preventDefault(); //Añadir esto para que no recargue la página cada vez que le doy a submit
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+          console.log("Formulario Inválido: No enviado");
+        } else {
+          console.log("Formulario enviado");
+        }
+        form.classList.add("was-validated"); //Esto es para que active los estilos de validación del formulario (Rollo los bordecitos verdes)
+      });
+    </script>
+  </body>
+</html>

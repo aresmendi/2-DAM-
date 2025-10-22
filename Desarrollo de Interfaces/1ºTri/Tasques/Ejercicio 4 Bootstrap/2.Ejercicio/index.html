@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    >
+  </head>
+  <body>
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-6">
+          <form id="init">
+            <h2>Formulario de inicio de sesión</h2>
+            <div class="mb-3">
+              <label for="usuario" class="col-form-label">Usuario:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="usuario"
+                value="usuario"
+                required
+              >
+            </div>
+            <div class="mb-3">
+              <label for="pass" class="col-form-label">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pass"
+                value="pass"
+                required
+              >
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit1">
+              Iniciar sesión
+            </button>
+          </form>
+        </div>
+        <div class="col-6">
+          <form id="register">
+            <h2>Formulario de registro</h2>
+            <div class="mb-3">
+              <label for="usuario" class="col-form-label">Usuario:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="user"
+                value="user"
+                required
+              >
+            </div>
+            <div class="mb-3">
+              <label for="mail" class="col-form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="mail1"
+                value="mail@mail.com"
+                required
+              >
+            </div>
+            <div class="mb-3">
+              <label for="mail2" class="col-form-label">Repetir email:</label>
+              <input type="email"
+               class="form-control"
+               id="mail2" 
+               value=""
+               required 
+               >
+            </div>
+            <div class="mb-3">
+              <label for="pass2" class="col-form-label">Password:</label>
+              <input
+                type="password"
+                class="form-control"
+                id="pass2"
+                value=""
+                required
+              >
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="showPass"
+                  name="showPass"
+                  value="false"
+                >
+                <label
+                  class="form-check-label d-flex align-self-start"
+                  for="showPass"
+                >
+                  Mostrar contraseña
+                </label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="opcion1"
+                  name="opcion1"
+                  value="op1"
+                  required
+                >
+                <label
+                  class="form-check-label d-flex align-self-start"
+                  for="opcion1"
+                >
+                  Acepto los término y condiciones
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger" id="submit2">
+              Registrarse
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //Validación de inicio de sesión
+      const form1 = document.getElementById("init");
+      form1.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!form1.checkValidity()) {
+          event.stopPropagation();
+          console.log("Formulario Invàlido: No enviado");
+        } else {
+          console.log("Formulario enviado");
+        }
+        form1.classList.add("was-validated");
+      });
+
+      //Mostrar/Ocultar contraseña
+      var pass = document.getElementById("pass2");
+      var show = document.getElementById("showPass");
+      
+      show.addEventListener("change", () => {
+        if(show.checked){
+          pass.type = 'text';
+        } else {
+        pass.type = 'password';
+      }
+      });
+      
+      //Validación de repetir e-mail
+      var mail1 = document.getElementById("mail1");
+      var mail2 = document.getElementById("mail2");
+
+      //Para cuando se modifica email2
+      mail2.addEventListener("input",() => {
+        if(mail1.value !== mail2.value) {
+          mail2.setCustomValidity("Los emails no coinciden");
+          mail2.classList.add("is-invalid");
+          mail2.classList.remove("is-valid");
+        } else {
+          mail2.setCustomValidity("");
+          mail2.classList.remove("is-invalid");
+          mail2.classList.add("is-valid");
+        }
+      });
+
+      //Para cuando se modifica email1
+      mail1.addEventListener("input",() => {
+        if(mail2.value !== "" && mail1.value !== mail2.value) {
+          mail2.setCustomValidity("Los emails no coinciden");
+          mail2.classList.add("is-invalid");
+          mail2.classList.remove("is-valid");
+        } else {
+          mail2.setCustomValidity("");
+          mail2.classList.remove("is-invalid");
+          mail2.classList.add("is-valid");
+        }
+      });
+
+      //Validación de registro
+      const form2 = document.getElementById("register");
+
+      form2.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (mail1.value !== mail2.value){
+          mail2.setCustomValidity("Los emails no coinciden");
+        }
+        if (!form2.checkValidity()) {
+          event.stopPropagation();
+          console.log("Formulario Invàlido: No enviado");
+        } else {
+          console.log("Formulario enviado");
+        }
+        form2.classList.add("was-validated");
+      });
+    </script>
+  </body>
+</html>
