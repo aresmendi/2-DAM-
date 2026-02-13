@@ -1,0 +1,52 @@
+class Product {
+  static const String idKey = 'id';
+  static const String descriptionKey = 'description';
+  static const String priceKey = 'price';
+  static const String availableKey = 'available';
+  static const String imageUrlKey = 'imageUrl';
+  static const String ratingKey = 'rating';
+
+  final String? id;
+  final String description;
+  final double price;
+  final DateTime available;
+  final String imageUrl;
+  final int rating;
+
+  const Product({
+    this.id,
+    required this.description,
+    required this.price,
+    required this.available,
+    required this.imageUrl,
+    required this.rating,
+  });
+  // JSON → Objeto
+
+  Product.fromJson(Map<String, dynamic> json)
+    : id = json[idKey],
+      //Para evitar que aparezca null en la vista se puede comprobar si el valor existe y mostrar un valor por defecto
+      description = json[descriptionKey] != null
+          ? json[descriptionKey].toString()
+          : 'Sin descripción',
+      price = double.tryParse(json[priceKey].toString()) ?? 0.0,
+      available = json[availableKey] != null
+          ? DateTime.parse(json[availableKey].toString())
+          : DateTime.now(), //Es buena práctica poner toString donde se espera String para evitar errores
+      imageUrl = json[imageUrlKey] != null ? json[imageUrlKey].toString() : '',
+      rating =
+          int.tryParse(json[ratingKey].toString()) ??
+          0; //Podemos hacer opcional una propiedad con el operador ?? para darle un valor por defecto
+
+  //Objeto -> Json
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'description': description,
+      'price': price,
+      'available': available.toIso8601String(),
+      'imageUrl': imageUrl,
+      'rating': rating,
+    };
+  }
+}
