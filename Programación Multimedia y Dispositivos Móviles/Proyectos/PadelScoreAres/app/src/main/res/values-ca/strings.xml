@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marcador de Padel d\'Ares</string>
+    <string name="setString" translatable="false">Sets</string>
+    <string name="setScore1" translatable="false">%d</string>
+    <string name="setScore2" translatable="false">%d</string>
+    <string name="gameString">Jocs</string>
+    <string name="gameScore1" translatable="false">%d</string>
+    <string name="gameScore2" translatable="false">%d</string>
+    <string name="actualSetString">Set Actual</string>
+    <string name="actualSetScore1" translatable="false">%d</string>
+    <string name="actualSetScore2" translatable="false">%d</string>
+    <string name="button1">Equip 1 marca</string>
+    <string name="button2">Equip 2 marca</string>
+    <string name="resetButton">Resetea-ho tot</string>
+    <string name="team1Won">L\'equip 1 guanya!</string>
+    <string name="team2Won">L\'equip 2 guanya!</string>
+</resources>

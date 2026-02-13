@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConversorAres</string>
+    <string name="title">Ares\' Conversor</string>
+    <string name="number">Number: %2f</string>
+    <string name="randomText">Randomize</string>
+    <string name="binary">Binary: %s</string>
+    <string name="binaryText">To binary</string>
+    <string name="hexa">Hexa: %s</string>
+    <string name="hexaText">To hexadecimal</string>
+    <string name="resetText">Reset Values</string>
+</resources>

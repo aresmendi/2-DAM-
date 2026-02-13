@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Marcador de Padel de Ares</string>
+    <string name="setString" translatable="false">Sets</string>
+    <string name="setScore1" translatable="false">%d</string>
+    <string name="setScore2" translatable="false">%d</string>
+    <string name="gameString">Juegos</string>
+    <string name="gameScore1" translatable="false">%d</string>
+    <string name="gameScore2" translatable="false">%d</string>
+    <string name="actualSetString">Set Actual</string>
+    <string name="actualSetScore1" translatable="false">%d</string>
+    <string name="actualSetScore2" translatable="false">%d</string>
+    <string name="button1">Equipo 1 marca</string>
+    <string name="button2">Equipo 2 marca</string>
+    <string name="resetButton">Resetear todo</string>
+    <string name="team1Won">El equipo 1 gana!</string>
+    <string name="team2Won">El equipo 2 gana!</string>
+</resources>

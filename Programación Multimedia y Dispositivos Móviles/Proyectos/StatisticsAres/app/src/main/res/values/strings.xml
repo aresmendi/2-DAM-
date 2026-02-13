@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">StatisticsAres</string>
+    <string name="title">Ares\' Stadistics</string>
+    <string name="subtitle">Total: %d</string>
+    <string name="reset">Reset Everything</string>
+    <string name="people" translatable="false">%d</string>
+    <string name="peopleTitle">People:</string>
+    <string name="add" translatable="false">+1</string>
+    <string name="minus" translatable="false">-1</string>
+    <string name="resetSimple">Reset</string>
+    <string name="scooterTitle">Scooters</string>
+    <string name="scooter" translatable="false">%d</string>
+    <string name="bicycleTitle">Bicycles</string>
+    <string name="bycicle" translatable="false">%d\n</string>
+    <string name="carTitle">Cars</string>
+    <string name="car" translatable="false">%d</string>
+    <string name="stadisticsTitle">Stadistics</string>
+    <string name="peopleStadistics">People: %d %%</string>
+    <string name="scootersStadistics">Scooters: %d %%</string>
+    <string name="byciclesStadistics">Bycicles: %d %%</string>
+    <string name="carsStadistics">Cars: %d %%</string>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PadelScoreAres</string>
+    <string name="setString" translatable="false">Sets</string>
+    <string name="setScore1" translatable="false">%d</string>
+    <string name="setScore2" translatable="false">%d</string>
+    <string name="gameString">Games</string>
+    <string name="gameScore1" translatable="false">%d</string>
+    <string name="gameScore2" translatable="false">%d</string>
+    <string name="actualSetString">Actual Set</string>
+    <string name="actualSetScore1" translatable="false">%d</string>
+    <string name="actualSetScore2" translatable="false">%d</string>
+    <string name="button1">Team 1 Scored</string>
+    <string name="button2">Team 2 Scored</string>
+    <string name="resetButton">Reset all</string>
+    <string name="team1Won">Team 1 won!</string>
+    <string name="team2Won">Team 2 won!</string>
+</resources>

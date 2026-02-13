@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">EduTest</string>
+
+    <string name="dashboard_greeting">Hola, %1$s</string>
+    <string name="dashboard_subtitle">¿Lista para aprender algo nuevo hoy?</string>
+    <string name="stat_last_score">Última Nota</string>
+    <string name="stat_exams">Exámenes</string>
+    <string name="btn_generate_review">Generar Repaso Personalizado</string>
+    <string name="btn_generate_review_sub">Basado en tus errores</string>
+    <string name="title_continue_exams">Continuar Exámenes</string>
+    <string name="exam_details_format">%1$d preguntas • %2$d min</string>
+    <string name="exam_in_progress">Examen en curso</string>
+
+    <string name="cd_generate_icon">Icono generar</string>
+    <string name="cd_start_exam">Iniciar examen</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_exams">Exámenes</string>
+    <string name="nav_history">Historial</string>
+    <string name="nav_profile">Perfil</string>
+
+    <string name="title_simulators">Simuladores</string>
+    <string name="tab_assigned">Asignados</string>
+    <string name="tab_my_reviews">Mis Repasos</string>
+    <string name="btn_start_exam">Iniciar</string>
+    <string name="exam_card_desc_format">%1$d Preg. • %2$d min.</string>
+    <string name="exam_question_counter">Pregunta %1$d de %2$d</string>
+    <string name="btn_previous">Anterior</string>
+    <string name="btn_next">Siguiente</string>
+    <string name="btn_finish">Finalizar</string>
+    <string name="cd_clock_icon">Icono de reloj</string>
+    <string name="cd_close_exam">Salir del examen</string>
+    <string name="title_history">Historial de Intentos</string>
+    <string name="status_approved">Aprobado</string>
+    <string name="status_failed">Necesita Mejorar</string>
+    <string name="score_format">Puntuación: %1$d/%2$d</string>
+    <string name="date_format">%1$s - %2$s</string>
+    <string name="cd_history_status">Estado del examen</string>
+    <string name="cd_view_detail">Ver detalle</string>
+    <string name="title_review">Revisión de Intento</string>
+    <string name="review_summary_title">Resumen de Resultados</string>
+    <string name="review_summary_fmt">Has acertado %1$d de %2$d preguntas.</string>
+    <string name="review_your_answer">Tu respuesta:</string>
+    <string name="review_correct_answer">Respuesta correcta:</string>
+    <string name="review_unanswered">Sin responder</string>
+    <string name="forgot_password_title">Recuperar Contraseña</string>
+    <string name="forgot_instructions">Introduce tu email y te enviaremos instrucciones.</string>
+    <string name="forgot_success_title">¡Email enviado!</string>
+    <string name="forgot_success_msg">Revisa tu bandeja de entrada para restablecer tu contraseña.</string>
+
+    <string name="btn_send_email">Enviar Correo</string>
+    <string name="btn_back_to_login">Volver al Login</string>
+    <string name="label_email">Email</string>
+    <string name="cd_back">Volver</string>
+    <string name="title_generate_review">Generar Repaso</string>
+    <string name="gen_review_info">Hemos detectado estos puntos débiles en tus últimos exámenes.</string>
+    <string name="gen_review_topics_header">Temas a incluir:</string>
+    <string name="gen_review_failures_fmt">%1$d fallos recientes</string>
+    <string name="btn_create_exam_fmt">Crear Examen (%1$d temas)</string>
+
+    <string name="login_app_name">EduTest</string>
+    <string name="label_username_email">Usuario o Email</string>
+    <string name="label_password">Contraseña</string>
+    <string name="cd_show_password">Mostrar contraseña</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="btn_forgot_password">¿Has olvidado tu contraseña?</string>
+    <string name="text_no_account">¿No tienes cuenta?</string>
+    <string name="btn_register">Regístrate</string>
+    <string name="cd_logo">Logo de la aplicación</string>
+
+    <string name="title_profile">Mi Perfil</string>
+    <string name="label_name">Nombre</string>
+    <string name="label_username">Usuario</string>
+    <string name="label_center">Centro</string>
+    <string name="btn_change_password">Cambiar contraseña</string>
+    <string name="btn_logout">Cerrar Sesión</string>
+    <string name="cd_logout">Icono cerrar sesión</string>
+
+    <string name="register_title">Crear Cuenta</string>
+    <string name="label_fullname">Nombre Completo</string>
+    <string name="label_confirm_password">Confirmar Contraseña</string>
+    <string name="error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="btn_sign_up">Registrarse</string>
+
+    <string name="title_results">Resultados del Simulador</string>
+    <string name="result_percentage_fmt">%1$d%%</string>
+    <string name="result_hits">Aciertos</string>
+    <string name="result_low_performance">Bajo rendimiento</string>
+    <string name="result_score_total">Puntuación Total: %1$d/%2$d</string>
+    <string name="result_status_approved">¡Aprobado!</string>
+    <string name="result_status_improve">Necesitas Mejorar</string>
+    <string name="btn_review_answers">Revisar Respuestas</string>
+    <string name="btn_back_home">Volver al Inicio</string>
+
+</resources>

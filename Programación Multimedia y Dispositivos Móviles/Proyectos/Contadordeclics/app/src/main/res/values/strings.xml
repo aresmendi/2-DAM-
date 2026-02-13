@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Click counter</string>
+    <string name="button_text">¡CLICK ME!</string>
+    <string name="contador">"You've clicked %d times"</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Estadísticas de Ares</string>
+    <string name="title">Estadísticas de Ares</string>
+    <string name="subtitle">Total: %d</string>
+    <string name="reset">Resetear Todo</string>
+    <string name="peopleTitle">Personas:</string>
+    <string name="resetSimple">Resetear</string>
+    <string name="scooterTitle">Patinetes</string>
+    <string name="bicycleTitle">Bicilcetas</string>
+    <string name="carTitle">Coches</string>
+    <string name="stadisticsTitle">Estadísticas</string>
+    <string name="peopleStadistics">Personas: %d %%</string>
+    <string name="scootersStadistics">Patinetes: %d %%</string>
+    <string name="byciclesStadistics">Bicicletas: %d %%</string>
+    <string name="carsStadistics">Coches: %d %%</string>
+</resources>

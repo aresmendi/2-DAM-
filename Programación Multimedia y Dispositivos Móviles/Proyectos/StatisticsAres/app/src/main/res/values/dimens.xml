@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topBar">30dp</dimen>
+    <dimen name="firstColumnHorPadding">40dp</dimen>
+    <dimen name="firstColumnVerPadding">40dp</dimen>"
+    <dimen name="subTitleHorPadding">50dp</dimen>
+    <dimen name="subTitleVerPadding">16dp</dimen>
+    <dimen name="subTitleSize">25sp</dimen>
+    <dimen name="resetButtonStart">20dp</dimen>
+    <dimen name="buttonsTittle">120dp</dimen>
+    <dimen name="buttonsControl">25dp</dimen>
+</resources>
